@@ -113,7 +113,7 @@ class App extends Component {
     onUpdateSalary = (id, newSalary) => {
         this.setState(({ data }) => ({
             data: data.map(item =>
-                item.id === id ? { ...item, salary: [newSalary] } : item
+                item.id === id ? { ...item, salary: newSalary} : item
             )
         }));
     };
